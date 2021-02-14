@@ -17,8 +17,7 @@ const Landing = () => {
         <Flex width={[1, 1 / 2]} alignSelf="center" pt={[1, 2, 3]}>
           <Box>
             <Heading fontSize={[3, 4, 5]}>
-              EconEngine is a search engine for economic and financial
-              information during the COVID-19 pandemic.
+            EconEngine is a search engine for financial assistance resources during the Covid-19 pandemic.
             </Heading>
           </Box>
         </Flex>
