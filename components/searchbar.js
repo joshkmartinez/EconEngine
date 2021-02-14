@@ -10,8 +10,7 @@ const examples = [
 	'What are unemployment benefits?',
 	'What is mortgage relief?',
 	'How do I file for unemployment?',
-	'How can I open a bank account?',
-	'Is now a good time to buy a home?'
+	'How can I open a bank account?'
 ]
 
 const searchbar = () => {

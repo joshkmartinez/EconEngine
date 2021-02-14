@@ -9,8 +9,8 @@ const Landing = () => {
 			<Flex flexDirection={['column', 'row']}>
 				<Flex width={[1, 1 / 2]} justifyContent="center">
 					<Image
-						height="20em"
-						width="20em"
+						height="16em"
+						width="16em"
 						src="/undraw_Web_search_re_efla.svg"
 					/>
 				</Flex>
@@ -18,7 +18,7 @@ const Landing = () => {
 					<Box>
 						<Heading fontSize={[3, 4, 5]}>
 							EconEngine is a search engine for financial assistance resources
-							during the Covid-19 pandemic.
+							during the COVID-19 pandemic.
 						</Heading>
 					</Box>
 				</Flex>
@@ -59,6 +59,9 @@ const Landing = () => {
 					EconEngine gives you accurate, relevant, and straight up answers to
 					your financial questions.
 				</Heading>
+			</Flex>
+			<Flex my={[2, 3, 4]}>
+				<Searchbar />
 			</Flex>
 		</Layout>
 	)
