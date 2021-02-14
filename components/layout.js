@@ -3,8 +3,6 @@ import {Flex, Box} from 'rebass'
 import Header from './header'
 import Footer from './footer'
 
-
-
 const Layout = ({children, noFooter = false}) => {
 	return (
 		<>
@@ -28,7 +26,6 @@ const Layout = ({children, noFooter = false}) => {
 							flex: 1,
 							minWidth: 0
 						}}
-						
 					>
 						<Box width={[1, 2 / 3]} px={[3, 2]}>
 							{children}
@@ -37,7 +34,6 @@ const Layout = ({children, noFooter = false}) => {
 				</Flex>
 				{!noFooter ? <Footer /> : null}
 			</Flex>
-			
 		</>
 	)
 }
