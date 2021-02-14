@@ -13,8 +13,8 @@ exports.handler = function (event, context, callback) {
 				records.forEach((record) => {
 					data.push({
 						Question: record.get('Question'),
-                        Answer: record.get('Answer'),
-                        Source: record.get('Source')
+						Answer: record.get('Answer'),
+						Source: record.get('Source')
 					})
 				})
 
