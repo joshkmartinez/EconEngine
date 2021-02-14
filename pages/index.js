@@ -6,7 +6,7 @@ import Searchbar from "../components/searchbar";
 const Landing = () => {
   return (
     <Layout>
-      <Flex flexDirection={["column", "row"]} mt={[ 4, 3]}>
+      <Flex flexDirection={["column", "row"]} mt={[ 5, 4]}>
         <Flex width={[1, 1 / 2]} justifyContent="center">
           <Image width="16em" src="/undraw_Web_search_re_efla.svg" />
         </Flex>
@@ -20,7 +20,7 @@ const Landing = () => {
         </Flex>
       </Flex>
 
-      <Flex my={[2, 3, 4]}>
+      <Flex my={[3, 4, 5]}>
         <Searchbar />
       </Flex>
 

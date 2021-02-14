@@ -100,7 +100,7 @@ const Card = ({ question, answer, source }) => {
   console.log(question, answer, source);
   return (
     <Box
-      m={1}
+      m={2}
       py={2}
       bg="whitesmoke"
       sx={{
