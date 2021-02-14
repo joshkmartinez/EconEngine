@@ -81,6 +81,7 @@ const searchbar = ({ full = false }) => {
                 .filter((i) => searchFilter(i))
                 .map((i) => (
                   <Card
+                  
                     key={i.Question}
                     question={i.Question}
                     answer={i.Answer}
@@ -132,7 +133,9 @@ const Card = ({ question, answer, source }) => {
         modal
         nested
       >
-        <Box bg="snow" p={[4, 5, 6]}>
+        <Box bg="snow"
+        sx={{border: '3px solid #23272A'}}
+        p={[4, 5, 6]}>
           <ReactMarkdown>{answer}</ReactMarkdown>
           <Text sx={{ fontFamily: "Work Sans" }} fontSize={[2, 3, 4]}>
             <Link href={source}>Source</Link>
