@@ -8,7 +8,7 @@ const Typewriter = dynamic(() => import("typewriter-effect"), {
 import fetchData from "../lib/data";
 import { SpinnerCircular } from "spinners-react";
 import Popup from "reactjs-popup";
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown";
 
 const examples = [
   "Can I get rental assistance?",
@@ -34,8 +34,10 @@ const searchbar = ({ full = false }) => {
   };
 
   const searchFilter = (i) => {
-    if (i.Question.toLowerCase().includes(query.toLowerCase()) ||
-    i.Answer.toLowerCase().includes(query.toLowerCase())) {
+    if (
+      i.Question.toLowerCase().includes(query.toLowerCase()) ||
+      i.Answer.toLowerCase().includes(query.toLowerCase())
+    ) {
       return i;
     }
   };
@@ -50,9 +52,11 @@ const searchbar = ({ full = false }) => {
               onChange={(e) => updateFilter(e)}
             />
           </Box>
-          <Button mx={[1, 2]} variant="primary">
-            Search
-          </Button>
+          <Link href="/search">
+            <Button mx={[1, 2]} variant="primary">
+              Search
+            </Button>
+          </Link>
         </Flex>
         <Typewriter
           options={{
@@ -92,7 +96,7 @@ const searchbar = ({ full = false }) => {
 };
 
 const Card = ({ question, answer, source }) => {
-    console.log(question, answer, source)
+  console.log(question, answer, source);
   return (
     <Box
       m={1}
@@ -129,11 +133,9 @@ const Card = ({ question, answer, source }) => {
         nested
       >
         <Box bg="snow" p={[4, 5, 6]}>
-        <ReactMarkdown>
-          {answer}
-          </ReactMarkdown>
+          <ReactMarkdown>{answer}</ReactMarkdown>
           <Text sx={{ fontFamily: "Work Sans" }} fontSize={[2, 3, 4]}>
-           <Link href={source}>Source</Link>
+            <Link href={source}>Source</Link>
           </Text>
         </Box>
       </Popup>
