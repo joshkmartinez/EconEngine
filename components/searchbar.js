@@ -134,9 +134,9 @@ const Card = ({question, answer, source}) => {
 				nested
 			>
 				<Box bg="snow" sx={{border: '3px solid #23272A'}} p={[4, 5, 6]}>
-					<ReactMarkdown>{answer}</ReactMarkdown>
-					<Text sx={{fontFamily: 'Work Sans'}} fontSize={[2, 3, 4]}>
-						<Link href={source}>Source</Link>
+					<ReactMarkdown linkTarget="_blank">{answer}</ReactMarkdown>
+					<Text sx={{fontFamily: 'Work Sans'}} fontSize={[1, 2, 3]}>
+						<Link target="_blank" href={source}>Source</Link>
 					</Text>
 				</Box>
 			</Popup>
