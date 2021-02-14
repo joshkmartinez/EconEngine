@@ -4,7 +4,7 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "netlify dev -c next -p 8000",
+    "dev": "netlify dev -c next dev -f functions/ -p 8000",
     "lint": "xo --fix --no-semicolon --prettier",
     "export": "next export"
   },
@@ -15,12 +15,17 @@
   "private": false,
   "dependencies": {
     "@rebass/forms": "^4.0.6",
+    "airtable": "^0.10.1",
     "babel-plugin-inline-react-svg": "^1.1.2",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "^10.0.6",
     "next-images": "^1.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-markdown": "^5.0.3",
+    "reactjs-popup": "^2.0.4",
     "rebass": "^4.0.7",
+    "spinners-react": "^1.0.4",
     "styled-components": "^5.2.1",
     "theme-ui": "^0.3.5",
     "typewriter-effect": "^2.17.0"

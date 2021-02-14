@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Flex, Box, Heading, Link, Text, Button, Image} from 'rebass'
 
 const navLinks = [
-	{name: 'About', href: '#about'},
+	{name: 'About', href: '/#about'},
 	{name: 'Search', href: '/search'}
 ]
 
